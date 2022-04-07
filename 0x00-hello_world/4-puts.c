@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * main point
- * return the function, the return must be zero
- * my first c code
+ * Description: main - Prints out a string 
+ * return: 0 if sucess
  */
 int main(void)
 {

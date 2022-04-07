@@ -1,10 +1,8 @@
 #include <stdio.h>
-/*
+/**
  * main point
- * return the function
- * the return must be zero
- * my first c function
- * let do it
+ * return the function, the return must be zero
+ * my first c function,let do it
  */
 int main(void)
 {

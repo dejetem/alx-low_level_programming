@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-int x, y;
+int bar1, bar2;
 
-for (x = 0; x < 9; x++)
+for (bar1 = 0; bar1 < 9; bar1++)
 {
-for (y = x + 1; y < 10; y++)
+for (bar2 = bar1 + 1; bar2 < 10; bar2++)
 {
-putchar((x % 10) + '0');
-putchar((y % 10) + '0');
+putchar((bar1 % 10) + '0');
+putchar((bar2 % 10) + '0');
 
-for (x == 8 && y == 9)
+for (bar1 == 8 && bar2 == 9)
 continue;
 
 putchar(',');

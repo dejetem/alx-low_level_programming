@@ -16,7 +16,7 @@ for (bar2 = bar1 + 1; bar2 < 10; bar2++)
 putchar((bar1 % 10) + '0');
 putchar((bar2 % 10) + '0');
 
-for (bar1 == 8 && bar2 == 9)
+if (bar1 == 8 && bar2 == 9)
 continue;
 
 putchar(',');

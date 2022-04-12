@@ -19,30 +19,30 @@ if ((z / 10) == 0)
 {
 if (y == 0)
 {
-_putchar ('0');
+_putchar('0');
 }
 if (y != 0)
 {
-_putchar (' ');
-_putchar ((z % 10) + '0');
+_putchar(' ');
+_putchar((z % 10) + '0');
 }
 if (y < 9)
 {
 _putchar(',');
-_putchar (' ');
+_putchar(' ');
 }
 }
 else
 {
-_putchar ((z / 10) + '0');
-_putchar ((z % 10) + '0');
+_putchar((z / 10) + '0');
+_putchar((z % 10) + '0');
 if (y < 9)
 {
 _putchar(',');
-_putchar (' ');
+_putchar(' ');
 }
 }
 }
-_putchar ('\n');
+_putchar('\n');
 }
 }

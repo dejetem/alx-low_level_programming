@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - entry
+ * jack_bauer - entry point
  *
  * Return: nothing if success
  */

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * main - entry point
- *
+ * _islower - entry point
+ * @c: contains value to be compared
  * Return: nothing if success
  */
 int _islower(int c)

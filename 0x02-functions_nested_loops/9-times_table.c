@@ -6,43 +6,43 @@
  */
 void times_table(void)
 {
-int x;
-int y;
-int z;
-for (x = 0; x <= 9; x++)
+int a;
+int b;
+int c;
+
+for (a = 0; a <= 9; a++)
 {
-for 
-(y = 0; y <= 9; y++)
+for (b = 0; b <= 9; b++)
 {
-z = x * y;
-if ((z / 10) == 0)
+c = a * b;
+if ((c / 10) == 0)
 {
-if (y == 0)
+if (b == 0)
 {
-_putchar('0');
+_putchar ('0');
 }
-if (y != 0)
+if (b != 0)
 {
-_putchar(' ');
-_putchar((z % 10) + '0');
+_putchar (' ');
+_putchar ((c % 10) + '0');
 }
-if (y < 9)
+if (b < 9)
 {
 _putchar(',');
-_putchar(' ');
+_putchar (' ');
 }
 }
 else
 {
-_putchar((z / 10) + '0');
-_putchar((z % 10) + '0');
-if (y < 9)
+_putchar ((c / 10) + '0');
+_putchar ((c % 10) + '0');
+if (b < 9)
 {
 _putchar(',');
-_putchar(' ');
+_putchar (' ');
 }
 }
 }
-_putchar('\n');
+_putchar ('\n');
 }
 }

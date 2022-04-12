@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *times_table  
+ *times_table entry 
  *
  * Return: nothing if success
  */

@@ -23,5 +23,5 @@ else
 printf(", ");
 }
 }
-retur (0);
+return (0);
 }

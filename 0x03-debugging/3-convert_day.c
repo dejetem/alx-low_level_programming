@@ -12,7 +12,7 @@ switch (month)
 {
 case 2:
 day = 31 + day;
-break:
+break;
 case 3:
 day = 59 + day;
 break;

@@ -18,9 +18,11 @@ while (str[i] != 0)
 i++;
 }
 total_character = i - 1;
+
 for(c = 0; c <= total_character; c++)
 {
 _putchar(str[total_character - c]);
 }
+
 _putchar('\n');
 }

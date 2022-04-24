@@ -6,7 +6,7 @@
  * Return: the enconde string
  */
 
-char *rot13(char *s)
+char *rot13(char *n)
 {
 int count = 0, i;
 char alph[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";

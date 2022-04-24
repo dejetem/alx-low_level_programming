@@ -23,7 +23,6 @@ else
 bg = c2;
 if (b <= bg + 1)
 return (0);
-
 a[bg + 1] = '\0';
 c1--, c2--, b--;
 d1 = *(n1 + c1) - 48, d2 = *(n2 + c2) - 48;
@@ -51,6 +50,5 @@ bg--, b--;
 if (*(a) == '0')
 return (a + 1);
 else
-
 return (a);
 }

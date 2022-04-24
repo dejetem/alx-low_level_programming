@@ -7,7 +7,7 @@
  * @n2: num 2
  * @a: buffer that the function will use to store the result.
  * @b: buffer size
- * Return: Always 0
+ * Return: the pointer to dest
  */
 
 char *infinite_add(char *n1, char *n2, char *a, int b)

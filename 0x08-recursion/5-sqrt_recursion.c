@@ -14,7 +14,7 @@ return (n);
 
 else if (m * m < n)
 return (_evaluate(m + 1, n));
-else if (m * m == n) 
+else if (m * m == n)
 return (m);
 
 return (-1);

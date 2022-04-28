@@ -7,17 +7,25 @@
  * Return: return 1 or 0
  */
 
-int evaluate_num(int i, int n)
+int evaluate_num(int n, int i)
 {
-if (n == 2)
-return (2);
-if (n % 2 == 0)
-return (0);
-if ((n % i == 0) && (n != i))
-return (0);
-if ((n % i == 0) && (n == i))
+if (i == n - 1)
+{
 return (1);
-return (evaluate_num(i + 1, n));
+}
+
+else if (n % i == 0)
+{
+return (0);
+}
+
+if (n % i != 0)
+{
+return (evaluate_num(n, i + 1));
+}
+
+return (0);
+
 }
 
 /**

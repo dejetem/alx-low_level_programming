@@ -31,7 +31,7 @@ return (0);
 /**
  * is_prime_number - Return if the input is a prime number
  * @n: number
- * Return:  1 or 0 
+ * Return:  1 or 0
  */
 
 int is_prime_number(int n)

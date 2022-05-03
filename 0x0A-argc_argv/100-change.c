@@ -3,13 +3,14 @@
 
 /**
  * main - function
- * @argc: length of argv
- * @argc: length of argv
- * Return: 0
+ *@argc: length of argv
+ *@argv: number of argument
+ *Return: 0
  */
 
 int main(int argc, char *argv[])
 {
+
 int position, total, change, aux;
 int coins[] = {25, 10, 5, 2, 1}; 
 
@@ -20,6 +21,7 @@ if (argc != 2)
 printf("Error\n");
 return (1);
 }
+
 total = atoi(argv[1]); 
 
 if (total <= 0)
@@ -27,7 +29,10 @@ if (total <= 0)
 printf("0\n");
 return (0);
 }
+
+
 while (coins[position] != '\0')
+
 {
 if (total >= coins[position])
 {
@@ -35,7 +40,9 @@ aux = (total / coins[position]);
 change += aux;
 total -= coins[position] * aux;
 }
+
 position++;
+
 }
 
 printf("%d\n", change);

@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_strlen - count array
+ *_strdup - count array
  *@s: array of elements
  *Return: pointer,  NULL if it fails
  */

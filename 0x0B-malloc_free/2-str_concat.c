@@ -38,7 +38,7 @@ if (n2 == NULL)
 n2 = "";
 size = (_strlen(n1) + _strlen(n2) + 1);
 
-k = (char *) malloc(size * sizeof(char));
+k = (char *) malloc(size *sizeof(char));
 
 
 if (k == 0)

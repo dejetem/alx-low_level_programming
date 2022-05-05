@@ -97,7 +97,7 @@ i--;
 free(p);
 return (NULL);
 }
-for (k = 0; k < len; k++)
+for (k = 0; k < len; ++k)
 p[i][k] = s[start++];
 p[i][k++] = '\0';
 j = end + 1;

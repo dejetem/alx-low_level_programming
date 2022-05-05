@@ -17,12 +17,13 @@ if (size == 0)
 return (NULL);
 }
 p = malloc(size * sizeof(char));
+
 if (p == NULL)
 {
 return (NULL);
 }
 while (i < size)
-}
+{
 p[i] = c;
 i++;
 }

@@ -1,6 +1,69 @@
 #include "main.h"
 
 /**
+ * endIndex - returns last index of non-space char
+ * @s: input string
+ * @i: starting index
+ * Return: index of last index of non-space char
+ */
+
+int endIndex(char *s, int i)
+{
+while (!isSpace(*(s + i)))
+i++;
+return (i);
+}
+
+/**
+ * countWords - counts numbers of word
+ * @n: input string
+ * Return: number of words
+ */
+
+int countWords(char *n)
+{
+int wordOn = 0;
+int wordOff = 0;
+
+while (*n)
+{
+if (isSpace(*n) && wordOn)
+wordOn = 0;
+else if (!isSpace(*n) && !wordOn)
+{
+wordOn = 1;
+wordOff++;
+}
+n++;
+}
+return (wordOff);
+}
+
+/**
+ * isSpace - determines if character is a space or not
+ * @c: input char
+ * Return: 1 if true, else 0
+ */
+int isSpace(char c)
+{
+return (c == ' ');
+}
+
+/**
+ * startIndex - returns first index of non-space char
+ * @s: input string
+ * @i: starting index
+ * Return: index of first non-space char
+ */
+
+int startIndex(char *s, int i)
+{
+while (isSpace(*(s + i)))
+i++;
+return (i);
+}
+
+/**
  * strtow - splits a string into words
  * @s: string of words to be split
  * Return: double pointer to strings
@@ -42,65 +105,6 @@ p[i] = NULL;
 return (p);
 }
 
-/**
- * isSpace - determines if character is a space or not
- * @c: input char
- * Return: 1 if true, else 0
- */
-int isSpace(char c)
-{
-return (c == ' ');
-}
 
-/**
- * startIndex - returns first index of non-space char
- * @s: input string
- * @i: starting index
- * Return: index of first non-space char
- */
 
-int startIndex(char *s, int i)
-{
-while (isSpace(*(s + i)))
-i++;
-return (i);
-}
 
-/**
- * endIndex - returns last index of non-space char
- * @s: input string
- * @i: starting index
- * Return: index of last index of non-space char
- */
-
-int endIndex(char *s, int i)
-{
-while (!isSpace(*(s + i)))
-i++;
-return (i);
-}
-
-/**
- * countWords - counts numbers of word
- * @n: input string
- * Return: number of words
- */
-
-int countWords(char *n)
-{
-int wordOn = 0;
-int wordOff = 0;
-
-while (*n)
-{
-if (isSpace(*n) && wordOn)
-wordOn = 0;
-else if (!isSpace(*n) && !wordOn)
-{
-wordOn = 1;
-wordOff++;
-}
-n++;
-}
-return (wordOff);
-}

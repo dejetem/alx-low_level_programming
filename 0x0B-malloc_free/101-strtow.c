@@ -1,6 +1,16 @@
 #include "main.h"
 
 /**
+ * isSpace - determines if character is a space or not
+ * @c: input char
+ * Return: 1 if true, else 0
+ */
+int isSpace(char c)
+{
+return (c == ' ');
+}
+
+/**
  * endIndex - returns last index of non-space char
  * @s: input string
  * @i: starting index
@@ -39,15 +49,6 @@ n++;
 return (wordOff);
 }
 
-/**
- * isSpace - determines if character is a space or not
- * @c: input char
- * Return: 1 if true, else 0
- */
-int isSpace(char c)
-{
-return (c == ' ');
-}
 
 /**
  * startIndex - returns first index of non-space char

@@ -34,7 +34,6 @@ n = size_b;
 p = malloc((size_a + n + 1) * sizeof(char));
 
 if (p == NULL)
-
 return (0);
 
 for (i = 0; i < size_a; i++)
@@ -47,6 +46,5 @@ for (; i < (size_a + n); i++)
 p[i] = s2[i - size_a];
 }
 p[i] = '\0';
-
 return (p);
 }

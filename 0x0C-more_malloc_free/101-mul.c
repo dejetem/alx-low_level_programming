@@ -2,7 +2,7 @@
 
 /**
  * main - multiplies two positive numbers
- * @argc: n arguments
+ * @argc: num arguments
  * @argv: args
  * Return: int
  */

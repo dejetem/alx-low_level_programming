@@ -23,6 +23,7 @@ return (malloc(new));
 if (new == old)
 
 return (ptr);
+
 if (new == 0 && ptr != NULL)
 { 
 free(ptr);
@@ -31,7 +32,9 @@ return (0);
 }
 relloc = malloc(new);
 if (relloc == NULL)
+
 return (0);
+
 for (i = 0; i < (old || i < new); i++)
 {
 *(relloc + i) = clone[i];

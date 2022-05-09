@@ -17,7 +17,7 @@ if (ptr != NULL)
 clone = ptr;
 else
 { 
-return (malloc(new));
+return (malloc(new_size));
 }
 if (new_size == old_size)
 

@@ -34,6 +34,7 @@ n = size_b;
 p = malloc((size_a + n + 1) * sizeof(char));
 
 if (p == NULL)
+
 return (0);
 
 for (i = 0; i < size_a; i++)

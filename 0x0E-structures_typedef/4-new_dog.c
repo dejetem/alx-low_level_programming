@@ -35,9 +35,9 @@ return (ptr);
 
 /**
  * new_dog - Create a new dog variable
- * @name: Name
- * @age: Age
- * @owner: Owner
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
  * Return: Pointer to new dog variable
  */
 

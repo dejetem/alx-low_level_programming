@@ -6,6 +6,7 @@
  * @name: name
  * @age: age
  * @owner:  owner
+ * Return: no return.
  */
 
 struct dog

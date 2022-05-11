@@ -3,7 +3,7 @@
 
 /**
  * _copy - Make a copy of passed in argument
- * @src: Data copy 
+ * @src: Data copy to make copy of 
  * Return: Pointer
  */
 
@@ -35,9 +35,9 @@ return (ptr);
 
 /**
  * new_dog - Create a new dog variable
- * @name: Name 
- * @age: Age 
- * @owner: Owner 
+ * @name: Name
+ * @age: Age
+ * @owner: Owner
  * Return: Pointer to new dog variable
  */
 

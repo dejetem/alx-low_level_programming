@@ -1,54 +1,80 @@
 #include <stdlib.h>
 #include "dog.h"
 
+/**
+ * _copy - Make a copy of passed in argument
+ * @src: Data copy 
+ * Return: Pointer
+ */
+
+char *_copy(char *src)
+{
+char *ptr;
+int i, len;
+
+if (src == NULL)
+{
+return (NULL);
+}
+for (len = 0; src[len] != '\0'; len++)
+;
+ptr = malloc(sizeof(char) * (len + 1));
+if (ptr == NULL)
+{
+return (NULL);
+}
+
+for (i = 0; src[i] != '\0'; i++)
+{
+ptr[i] = src[i];
+}
+ptr[i] = '\0';
+
+return (ptr);
+}
 
 /**
- * new_dog - creates a new dog.
- * @name: name of the dog.
- * @age: age of the dog.
- * @owner: owner of the dog.
- *
- * Return: struct dog.
- * if fails, returns NULL.
+ * new_dog - Create a new dog variable
+ * @name: Name 
+ * @age: Age 
+ * @owner: Owner 
+ * Return: Pointer to new dog variable
  */
+
 dog_t *new_dog(char *name, float age, char *owner)
 {
-dog_t *p_dog;
-int i, lname, lowner;
+dog_t *poppy;
+char *new_name, *new_owner;
 
-p_dog = malloc(sizeof(*p_dog));
-if (p_dog == NULL || !(name) || !(owner))
+if (name == NULL || owner == NULL)
 {
-free(p_dog);
 return (NULL);
 }
 
-for (lname = 0; name[lname]; lname++)
-;
-
-for (lowner = 0; owner[lowner]; lowner++)
-;
-
-p_dog->name = malloc(lname + 1);
-p_dog->owner = malloc(lowner + 1);
-
-if (!(p_dog->name) || !(p_dog->owner))
+poppy = malloc(sizeof(dog_t));
+if (poppy == NULL)
 {
-free(p_dog->owner);
-free(p_dog->name);
-free(p_dog);
 return (NULL);
 }
+new_name = _copy(name);
+if (new_name == NULL)
+{
+free(poppy);
 
-for (i = 0; i < lname; i++)
-p_dog->name[i] = name[i];
-p_dog->name[i] = '\0';
+return (NULL);
+}
+(*poppy).name = new_name;
+(*poppy).age = age;
 
-p_dog->age = age;
+new_owner = _copy(owner);
+if (new_owner == NULL)
+{
+free((*poppy).name);
+free(poppy);
 
-for (i = 0; i < lowner; i++)
-p_dog->owner[i] = owner[i];
-p_dog->owner[i] = '\0';
+return (NULL);
+}
+(*poppy).owner = new_owner;
 
-return (p_dog);
+return (poppy);
 }

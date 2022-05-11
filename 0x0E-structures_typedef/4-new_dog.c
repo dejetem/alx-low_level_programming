@@ -2,9 +2,9 @@
 #include "dog.h"
 
 /**
- * _copy  -   Make a copy of passed in argument
- * @src:      Data copy 
- * Return:    Pointer
+ * _copy - Make a copy of passed in argument
+ * @src: Data copy 
+ * Return: Pointer
  */
 
 char *_copy(char *src)
@@ -28,6 +28,7 @@ for (i = 0; src[i] != '\0'; i++)
 ptr[i] = src[i];
 }
 ptr[i] = '\0';
+
 return (ptr);
 }
 
@@ -58,6 +59,7 @@ new_name = _copy(name);
 if (new_name == NULL)
 {
 free(poppy);
+
 return (NULL);
 }
 (*poppy).name = new_name;
@@ -68,6 +70,7 @@ if (new_owner == NULL)
 {
 free((*poppy).name);
 free(poppy);
+
 return (NULL);
 }
 (*poppy).owner = new_owner;

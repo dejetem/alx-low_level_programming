@@ -4,29 +4,31 @@
  * print_strings - prints strings.
  * @separator: string to be printed between the strings.
  * @n: number of strings passed to the function.
- * Return: is a void function
+ *
+ * Return: no return.
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-va_list valist;
-unsigned int i;
-char *string;
+	va_list valist;
+	unsigned int i;
+	char *str;
 
-va_start(valist, n);
+	va_start(valist, n);
 
-i = 0;
-while (i < n)
-{
-string = va_arg(valist, char *);
-if (string == NULL)
-printf("(nil)");
-else
-printf("%s", string);
-if (i != (n - 1) && (separator != NULL))
-printf("%s", separator);
-i++;
-}
-printf("\n");
-va_end(valist);
+	for (i = 0; i < n; i++)
+	{
+		str = va_arg(valist, char *);
+
+		if (str)
+			printf("%s", str);
+		else
+			printf("(nil)");
+
+		if (i < n - 1)
+			if (separator)
+				printf("%s", separator);
+	}
+
+	printf("\n");
+	va_end(valist);
 }

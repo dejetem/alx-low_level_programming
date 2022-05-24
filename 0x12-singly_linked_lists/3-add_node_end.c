@@ -2,7 +2,7 @@
 
 /**
  * add_node_end - adds a new node at the end of a list_t list
- * @head: double pointer 
+ * @head: double pointer
  * @str: points
  * Return: the address of the new element, or NULL if it failed
  */
@@ -34,5 +34,6 @@ new1 = new1->next;
 }
 new1->next = new_node;
 }
+
 return (new_node);
 }

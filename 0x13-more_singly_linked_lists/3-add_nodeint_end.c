@@ -2,7 +2,7 @@
 
 /**
  * add_nodeint_end - adds a node at the end of a linked list
- * @head: pointer 
+ * @head: pointer
  * @n: data of new element
  *
  * Return: pointer to the new node, or NULL if it fails

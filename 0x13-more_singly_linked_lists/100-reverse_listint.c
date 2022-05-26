@@ -12,6 +12,7 @@ listint_t *prev = NULL;
 listint_t *next = NULL;
 
 while (*head)
+:wq
 }
 next = (*head)->next;
 (*head)->next = prev;

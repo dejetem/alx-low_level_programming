@@ -4,7 +4,7 @@
  * main - the copies the content of a file to another file
  * @argc: the number of arguments passed
  * @argv: the double pointer
- * Return: actual number of letters it could read and print
+ * Return: the actual number of letters it could read and print
  */
 int main(int argc, char **argv)
 {

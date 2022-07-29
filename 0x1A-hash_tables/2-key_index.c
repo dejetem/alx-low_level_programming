@@ -3,7 +3,7 @@
 /**
  * key_index - function that generates a index according to a given hash
  *
- * @key: the string key
+ * @key: key passed
  * @size: size of the hash tables
  * Return: key index
  */

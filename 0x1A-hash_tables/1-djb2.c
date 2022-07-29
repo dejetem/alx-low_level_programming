@@ -2,7 +2,7 @@
 
 /**
  * hash_djb2 - hashing function
- * @str: string used to generate hash value
+ * @str: the key
  *
  * Return: hashed index
  */

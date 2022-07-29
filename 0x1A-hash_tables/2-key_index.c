@@ -1,11 +1,11 @@
 #include "hash_tables.h"
 
 /**
- * key_index - gives hash index of a key
+ * key_index - function that generates a index according to a given hash
  *
- * @key: string key
+ * @key: the string key
  * @size: size of the hash tables
- * Return: hashed index
+ * Return: key index
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {

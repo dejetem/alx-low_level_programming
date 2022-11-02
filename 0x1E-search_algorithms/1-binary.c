@@ -14,7 +14,7 @@ size_t n = 0;
 int *a = array;
 
 if (!array)
-		return (-1);
+return (-1);
 
 while (size)
 {
